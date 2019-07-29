@@ -12,7 +12,7 @@ function handleText(ctx) {
   if (ctx.message.text.includes(' ')) {words = ctx.message.text.split(' ')} else {words[0] = ctx.message.text}
   for (i in words) {words[i] = words[i].toLowerCase()} //тут слова в lower case перевожу
 
-  data = fs.readFileSync('exercises.txt', 'utf-8')
+  data = fs.readFileSync('exercises.txt', 'utf-16')
   exercisesArray = []
   exercises = {}
   console.log(data)
